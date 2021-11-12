@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rosca David Sorin</title>
+<link rel="stylesheet" type="text/css" href="mere.css">
+</head>
+<body>
+<p id="demo"></p>
+<script>
+function functie(){
+document.getElementById("Nume").innerHTML="Doctor ing. David Sorin Rosca";
+document.getElementById("Activitatireprezentative").innerHTML="Activitati din perioada facultatii";
+document.getElementById("citit").innerHTML="Party cu colegii din campus";
+document.getElementById("voluntariat").innerHTML="OSUT";
+document.getElementById("excursii").innerHTML="Seara de socializarea in OSUT";
+document.getElementById("Paginaprincipala").innerHTML="Pagina Secundara";
+document.getElementById("Imagine").src="Davidjavascript.jpeg";
+document.getElementById("Imagine").style.opacity="0.4";
+document.getElementById("Imagine").style.borderRadius ="20%";
+document.body.style.backgroundColor = "yellow";
+document.getElementById("email").style.color = "#ff0000";
+document.getElementById("citat").style.color = "magenta";
+document.getElementById("materie").style.color = "blue";
+document.getElementById("anul").style.color = "lightblue";
+document.getElementById("f").style.color = "orange";
+document.getElementById("alga").style.color = "magenta";
+document.getElementById("ccp").style.color = "blue";
+document.getElementById("Prog").style.color = "red";
+document.getElementById("Nume").style.color ="red";
+document.getElementById("Activitatireprezentative").style.color ="blue";
+document.getElementById("citit").style.color ="pink";
+document.getElementById("excursii").style.color ="black";
+}
+function arVarst(){
+var azi = new  Date();
+var varstMea;
+var anNasc = document.getElementById("varsta").innerHTML;
+varstMea = azi.getFullYear()-parseInt(anNasc);
+document.getElementById("varsta").innerHTML =varstMea;}
+</script>
+<h1  id="Nume">Roșca David Sorin</h1>
+<img  id="Imagine"src="Imagine.jpeg" width="400" height="400">
+<p onmouseover="arVarst()" id="varsta">2001</p>
+<p><h4 id="email">e-mail:davidsrosca@gmail.com</h4>
+<h5 id="citat">Batranii pot face razboi, dar numai copiii vor face istorie;</h5>
+<button type="button" onclick="functie()">Alta Viata!</button>
+<table width="100">
+<tr>
+<th id="materie">Materie</th>
+<th id="anul">Anul</th>
+<th id="f">Fisa disciplinei</th>
+</tr>
+<tr>
+<td id="alga">Algebră liniară și geometrie analitică și diferențială</td>
+<td>I</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/02.pdf</a></td>
+</tr>
+<tr>
+<td id="ccp">Componente si circuite pasive</td>
+<td>I</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf</a></td>
+</tr>
+<tr>
+<td id="Prog">Progamarea calculatoarelor și limbaje de progamare I</td>
+<td>I</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf</a></td>
+</tr>
+</table>
+<ul>
+<li id="Activitatireprezentative">Activități reprezentative:</li>
+<li id="citit">citit</li>
+<li id="voluntariat">voluntariat</li>
+<li id="excursii">excursii</li>
+<p> <a id="Paginaprincipala" href="Coperta.html">Pagina principala</p>
+</ul>
+</body>
+</html>
